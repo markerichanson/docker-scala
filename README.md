@@ -10,7 +10,15 @@ docker pull markerichanson/docker-scala
 ```
 ## Building
 ```sh
-docker build -f docker-scala/Dockerfile -t "scala:2.11.8" --build-arg SCALA_VERSION=2.11.8 .
+$ git clone https://github.com/markerichanson/docker-scala.git
+Cloning into 'docker-scala'...
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 7 (delta 1), reused 7 (delta 1), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+Checking connectivity... done.
+
+$ docker build -f docker-scala/Dockerfile -t "scala:2.11.8" --build-arg SCALA_VERSION=2.11.8 .
 ```
 ## Suggested aliases
 ```sh
