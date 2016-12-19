@@ -1,9 +1,13 @@
 # docker-scala
 
-* [`2.11.8`](dockerhub link)
+* [`2.11.8`](https://hub.docker.com/r/markerichanson/docker-scala/)
 
-Image for running scala using docker. Built primarily as base image for sbt
+Image for running scala using docker. Built primarily as base image for [scala-sbt](https://hub.docker.com/r/markerichanson/docker-scala-sbt/)
 
+## Pulling
+```sh
+docker pull markerichanson/docker-scala
+```
 ## Building
 ```sh
 docker build -f docker-scala/Dockerfile -t "scala:2.11.8" --build-arg SCALA_VERSION=2.11.8 .
